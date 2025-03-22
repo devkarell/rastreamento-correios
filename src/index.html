@@ -4,32 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" del="stylesheet">
-    <link rel="stylesheet" href="styles/root.css">
-    <title>Clone | Rastreamento Unificado</title>
+    <title>Rastreamento Unificado | Replica</title>
+    <link rel="stylesheet" href="./styles/main.css">
 </head>
 
 <body>
     <header>
         <aside class="ect-container">
             <a href="index.html" target="_self" class="ect-logo">
-                <img src="assets/logo-ect.svg" alt="Logo dos Correios">
+                <img src="../public/images/logo-ect.svg" alt="Logo dos Correios">
             </a>
 
             <div class="ect-info-container">
-                <p class="content-env" id="content-env">Ambiente: Produção - <strong>SRO Intranet</strong></p>
-                <p class="content-version" id="content-version">Versão: 1.21.0 - <strong>Réplica não Oficial</strong></p>
+                <p id="content-env">Ambiente: Produção - <strong>SRO Intranet</strong></p>
+                <p id="content-version">Versão: 1.21.0 - <strong>Réplica não Oficial</strong></p>
             </div>
         </aside>
 
         <nav class="accessibility">
             <a href="#" target="_self" class="language-set" id="pt-br">Português</a>
             <a href="#" target="_self" class="language-set" id="en-us">English</a>
-            <a href="https://faleconosco.correios.com.br/faleconosco/app/index.php" target="_blank" class="SAC-redirect">
+            <a href="https://faleconosco.correios.com.br/faleconosco/app/index.php" target="_blank"
+                class="SAC-redirect">
                 <p id="SAC-redirect">Preciso de Ajuda</p>
-                <img src="./assets/question-light.svg" alt="?">
+                <img src="../public/images/question-light.svg" alt="?">
             </a>
         </nav>
     </header>
@@ -39,40 +37,44 @@
     <section class="main-container">
         <fieldset class="search-content">
             <legend id="search-content-title">Pesquisa de Objetos</legend>
-    
-            <form class="search-form" id="search-objects" action="" method="get">
-                <p class="search-title" id="search-form-title"><strong>Digite ou Escaneie</strong> o código do(s) Objeto(s) abaixo <strong>(Limite de {{MAX_SEARCH_CODES}} Objetos)</strong>:</p>
-    
-                <section class="barcodes-container">
+
+            <form class="search-form" id="search-form" action="" method="get">
+                <p class="search-title" id="search-title"><strong>Digite ou Escaneie</strong> o código do(s) Objeto(s)
+                    abaixo <strong>(Limite de {{MAX_SEARCH_CODES}} Objetos)</strong>:</p>
+
+                <section class="barcodes-container" id="barcodes-container">
                     <input type="text" name="barcode-box" class="barcode-box" id="barcode-box1"
-                        placeholder="Ex: AA123456789BR" maxlength="13" autofocus required autocomplete="off"></input>
+                        placeholder="Ex: AA123456789BR" maxlength="13" autofocus required autocomplete="off">
                 </section>
             </form>
 
             <div class="search-functions">
-                <button type="submit" form="search-objects" id="submit-searchcodes">Buscar</button>
+                <button type="submit" form="search-form" id="submit-searchcodes">Buscar</button>
                 <button type="button" id="add-barcode">
-                    <img src="./assets/plus-circle-fill.svg" alt="">
+                    <img src="../public/images/plus-circle-fill.svg" alt="+">
                 </button>
             </div>
         </fieldset>
-    
+
         <aside class="tips">
-            <h2 class="tips-title" id="tips-title">Como utilizar?</h3>
-            
+            <h2 class="tips-title" id="tips-title">Como utilizar?</h2>
+
             <ul class="tips-list">
-                <li class="tip" id="tip">Faça a leitura (ou digite manualmente) o Código de Barras do objeto no campo em destaque;</li>
+                <li class="tip" id="tip">Faça a leitura (ou digite manualmente) o Código de Barras do objeto no campo em
+                    destaque;</li>
                 <li class="tip" id="tip1">(Em caso de vários objetos) Faça a leitura de um objeto para cada campo;</li>
                 <li class="tip" id="tip2">Clique em "Buscar" para obter as informações desejadas;</li>
             </ul>
-                    
-            <p class="tips-advertise" id="tips-advertise">Remessas internacionais com código do objeto iniciado com 'R’ e terminado com 'BR'
-                <strong>não possuem rastreamento eletrônico garantido</strong>
-                fora do território brasileiro. Para obtenção de informação sobre a entrega desses objetos no país de
-                destino, é possível efetuar-se o pedido de informação,
-                após o término do prazo estimado de entrega, disponível na
-                <a href="https://faleconosco.correios.com.br/faleconosco/app/index.php" target="_blank">Página de Ajuda</a>.
-            </p>
+
+            <p class="tips-advertise" id="tips-advertise">Remessas internacionais com código do objeto iniciado com 'R’
+                e terminado
+                com 'BR' <strong>não possuem rastreamento eletrônico garantido</strong> fora do território brasileiro.
+                Para obtenção
+                de informação sobre a entrega desses objetos no país de destino, é possível efetuar-se o pedido de
+                informação, após
+                o término do prazo estimado de entrega, disponível na <a
+                    href="https://faleconosco.correios.com.br/faleconosco/app/index.php" target="_blank">Página de
+                    Ajuda</a>.</p>
         </aside>
     </section>
 

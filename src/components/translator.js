@@ -1,17 +1,17 @@
-import translations from './data.js'
-import alerts from './alerts.js'
-import config from '../env/config.js';
+import alertsData from './alertsTranslateData.js'
+import indexData from './indexTranslateData.js'
+import config from '../utils/configs.js';
 
 function translatePage(language) {
     document.documentElement.setAttribute('lang', language);
-    
-    for (let element in translations) {
-        document.getElementById(element).innerHTML = translations[element][language].replace('{{MAX_SEARCH_CODES}}', config.objectSearchLimits)
+
+    for (let element in indexData) {
+        document.getElementById(element).innerHTML = indexData[element][language].replace('{{MAX_SEARCH_CODES}}', config.objectSearchLimits)
     }
 }
 
 export function getTranslatedAlerts() {
-    return alerts
+    return alertsData
 }
 
 export function bootstrap() {

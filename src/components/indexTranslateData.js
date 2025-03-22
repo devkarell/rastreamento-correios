@@ -24,7 +24,7 @@ export default {
         'en-us': 'Object Search'
     },
 
-    'search-form-title': {
+    'search-title': {
         'pt-br': '<strong>Digite ou Escaneie</strong> o código do(s) Objeto(s) abaixo <strong>(Limite de {{MAX_SEARCH_CODES}} Objetos)</strong>:',
         'en-us': '<strong>Enter or Scan</strong> the code of the Object(s) below <strong>(Limit {{MAX_SEARCH_CODES}} Objects)</strong>:'
     },

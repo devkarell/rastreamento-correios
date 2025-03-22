@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import 'header.css';
-@import 'contents.css';
+@import 'page.css';
 
 :root {
     --pagebg: #f8f8f8;
@@ -18,14 +19,13 @@
     --contrast900: #ffe033;
     --contrast500: #ffec83;
     --contrastalt: #ffb833;
+    font-family: 'Inter';
 }
 
 * {
     margin: 0px;
     box-sizing: border-box;
     padding: 0px;
-
-    font-family: 'Inter';
     color: var(--text900);
 }
 
